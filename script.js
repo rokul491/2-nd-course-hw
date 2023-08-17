@@ -60,4 +60,4 @@ alert(user.info);
 
 //10
 let userName = prompt(`Как тебя зовут?`);
-alert(`Привет, ${userName}!`);
+alert(`Привет, ${userName}!`); 
