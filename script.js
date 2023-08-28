@@ -1,5 +1,5 @@
 //1
-let a = 10;
+/*let a = 10;
 alert(a);
 a = 20;
 alert(a);
@@ -142,4 +142,71 @@ switch(monthNumber) {
         break;
     default:
         alert('Неверный номер месяца');    
+}
+
+while (true) {
+    const msg = prompt('Введи break');
+    if (msg === 'break') {
+        break;
+    } 
+    if (msg === 'continue') {
+        continue;
+    }
+    else {
+        console.log(msg);
+    }
+}*/
+
+//
+// Lesson 4
+//
+
+//1
+let i = 1;
+do {
+    console.log('Привет');
+    i++;    
+} while (i <= 2);
+
+//2
+let i = 1;
+do {
+    console.log(i);
+    i++;
+} while (i <= 5);
+
+//3
+let i = 7;
+do {
+    console.log(i);
+    i++;
+} while (i >= 7 && i <= 22);
+
+//4
+let obj = {
+    'Коля': '200',
+    'Вася': '300',
+    'Петя': '400'
+};
+
+for (let name in obj) {
+    console.log(name, '- зарплата', obj[name], 'долларов');
+}
+
+//5
+let n = 1000;
+let num = 0;
+do {
+    n /= 2;
+    num++;
+} while (n > 50);
+console.log(num);
+console.log(n);
+
+//6
+let friday = 4;
+for(let dayCount = 1; dayCount <= 31; dayCount++) {
+    if ((dayCount - friday) % 7 == 0) {
+        console.log('Сегодня пятница,', dayCount, '-е число. Необходимо подготовить отчет');
+    }
 }
