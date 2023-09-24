@@ -217,7 +217,7 @@ for(let dayCount = 1; dayCount <= 31; dayCount++) {
 //
 
 //1
-/*function min(a, b) {
+function min(a, b) {
     if (a < b) {
         return a;
     } else {
@@ -328,7 +328,6 @@ function getPerimeter() {
     return this.radius * 3.14 * 2;
 }
 //alert(circle2.getPerimeter());
-*/
 
 //8
 
