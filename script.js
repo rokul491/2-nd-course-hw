@@ -161,7 +161,8 @@ while (true) {
 // Lesson 4
 //
 
-//1
+//1 
+/*
 let i = 1;
 do {
     console.log('Привет');
@@ -208,5 +209,145 @@ let friday = 4;
 for(let dayCount = 1; dayCount <= 31; dayCount++) {
     if ((dayCount - friday) % 7 == 0) {
         console.log('Сегодня пятница,', dayCount, '-е число. Необходимо подготовить отчет');
+    }
+}*/
+
+//
+//Lesson 5
+//
+
+//1
+/*function min(a, b) {
+    if (a < b) {
+        return a;
+    } else {
+        return b;
+    }
+}
+
+console.log(min(58, 14));
+
+//2
+function evenNumber() {
+    let n = prompt(`Введите число, чтобы проверить его на четность`);
+
+    if (n % 2 == 0) {
+        alert(`Число четное`);
+    } else {
+        alert(`Число нечетное`);
+    }
+}
+
+evenNumber();
+
+ //3.1
+let squareNumber = (c) => {
+    let result = Number(prompt(`Введите число для возведения в квадрат`));
+    c = result * result
+    console.log(c);
+}
+
+squareNumber();
+
+//3.2
+let squareNumber2 = (r) => {
+    let result = Number(prompt(`Введите число для возведения в квадрат`));
+    r = result * result;
+    return r;
+}
+
+console.log(squareNumber2());
+
+//4
+function ageAsk() {
+    let age = Number(prompt(`Сколько тебе лет?`));
+
+    if (age < 0) {
+        alert(`Вы ввели неправильное значение`);
+    }
+    if (0 <= age && age <=12) {
+        alert(`Привет, друг!`);
+    }
+    if (age >= 13) {
+        alert(`Добро пожаловать!`);
+    }
+}
+
+ageAsk();
+
+//5
+
+function mult(a, b) {
+    a = prompt('Введите первое число');
+    b = prompt('Введите второе число');
+    
+    if (isNaN(a) || isNaN(b)) {
+        alert('Одно или оба значения не являются числом');
+    } else {
+        let c = a * b;
+        alert(c);
+    }
+}
+
+mult();
+
+//6
+
+function cube(a) {
+    a = prompt('Введите число для возведения его в куб');
+
+    if (isNaN(a)) {
+        alert('Переданный параметр не является числом');
+    } else {
+        let c = a ** 3;
+        alert(a + ' в кубе равняется ' + c);
+    }
+}
+
+cube();
+
+//7
+
+let circle1 = {
+    radius: 15,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+}
+
+let circle2 = {
+    radius: 13,
+    getArea: getArea,
+    getPerimeter: getPerimeter
+}
+
+function getArea() {
+    return (this.radius * 3.14) ** 2;
+}
+
+function getPerimeter() {
+    return this.radius * 3.14 * 2;
+}
+//alert(circle2.getPerimeter());
+*/
+
+//8
+
+function monthGame() {
+    let a = prompt('Введите номер месяца');
+
+    if (a == 12 || (a >= 1 && a <= 2)) {
+        alert('Зима');
+    }
+    else if (a >= 3 && a <= 5) {
+        alert('Весна');
+    }
+    else if (a >= 6 && a <= 8) {
+        alert('Лето');
+    }
+    else if (a >= 9 && a <= 11) {
+        alert('Осень');
+    }
+    else {
+        alert('Неправильный номер месяца');
     }
 }

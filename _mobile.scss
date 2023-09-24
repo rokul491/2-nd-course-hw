@@ -70,4 +70,29 @@
         }
     }
 
+    .middle{ 
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .seasons {  
+        align-items: center;
+        width: 373px;
+        &_text {
+            width: 343px;
+            color: #FFF;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 22px; /* 157.143% */
+        }
+    }
+    
+    .controller {
+        padding-top: 179px;
+    }
+
 }

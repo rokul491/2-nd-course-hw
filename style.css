@@ -141,6 +141,46 @@
   padding: 32px;
 }
 
+.middle {
+  background: #000915;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 282.4px;
+  padding-top: 282.4px;
+}
+
+.seasons {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.seasons_heading {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.seasons_text {
+  width: 594px;
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px; /* 177.778% */
+}
+
+.play_button_text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 @media (max-width: 767px) {
   .header {
     background-image: url(img/mobilebg.jpg);
@@ -210,5 +250,27 @@
     height: 31.639px;
     flex-direction: column;
     justify-content: center;
+  }
+  .middle {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+  .seasons {
+    align-items: center;
+    width: 373px;
+  }
+  .seasons_text {
+    width: 343px;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px; /* 157.143% */
+  }
+  .controller {
+    padding-top: 179px;
   }
 }/*# sourceMappingURL=style.css.map */
